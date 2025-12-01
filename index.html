@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجرك الاحترافي - M2BF</title>
+    <meta name="description" content="متجر إلكتروني احترافي - شحن جميع المحافظات">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {font-family: 'Cairo', sans-serif; background: #f8f9fa;}
+        .hero {background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 100px 0;}
+        .product-card {transition: all 0.3s; border: none; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);}
+        .product-card:hover {transform: translateY(-10px); box-shadow: 0 20px 30px rgba(0,0,0,0.2);}
+        .price {font-size: 1.5rem; color: #e74c3c; font-weight: 900;}
+        .old-price {text-decoration: line-through; color: #95a5a6; font-size: 1rem;}
+        .whatsapp-btn {background: #25d366; color: white; border-radius: 50px; padding: 12px 30px; font-size: 1.1rem;}
+        .whatsapp-btn:hover {background: #128c7e;}
+        .telegram-btn {background: #0088cc; color: white; border-radius: 50px; padding: 12px 30px; font-size: 1.1rem; margin-left: 10px;}
+        .telegram-btn:hover {background: #006699;}
+        .fixed-whatsapp {position: fixed; bottom: 20px; left: 20px; z-index: 9999;}
+        header {background: rgba(0,0,0,0.8); backdrop-filter: blur(10px);}
+    </style>
+</head>
+<body>
+
+<!-- زر واتساب وتليجرام ثابت في الأسفل -->
+<div class="fixed-whatsapp">
+    <a href="https://wa.me/201205520031?text=مرحبا%20أريد%20الاستفسار%20عن%20المنتجات" target="_blank" class="btn whatsapp-btn shadow-lg">
+        <i class="fab fa-whatsapp fa-2x"></i> واتساب
+    </a>
+    <a href="https://t.me/201205520031" target="_blank" class="btn telegram-btn shadow-lg">
+        <i class="fab fa-telegram fa-2x"></i> تليجرام
+    </a>
+</div>
+
+<!-- Header -->
+<header class="py-3 position-sticky top-0 z-3">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <h3 class="text-white mb-0">متجرك الاحترافي</h3>
+            <div>
+                <i class="fas fa-truck text-white me-3"></i> شحن لجميع المحافظات
+                <span class="mx-3 text-white">|</span>
+                <i class="fas fa-shield-alt text-white me-2"></i> ضمان أصلية المنتجات
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold">عروض وخصومات تصل لـ 70%</h1>
+        <p class="lead">اطلب دلوقتي واستلم خلال 24-48 ساعة فقط!</p>
+        <a href="#products" class="btn btn-warning btn-lg mt-3">تسوق الآن</a>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section id="products" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold">أقوى العروض الحالية</h2>
+        <div class="row g-4">
+
+            <!-- منتج 1 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="product-card bg-white">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" class="w-100" alt="ساعة ذكية" style="height: 300px; object-fit: cover;">
+                    <div class="p-4">
+                        <h5>ساعة ذكية اصلية 2025</h5>
+                        <p class="text-success fw-bold">متوفر الان - شحن فوري</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="price">٤٩٩ جنيه</span>
+                                <span class="old-price ms-2">١٢٠٠ جنيه</span>
+                            </div>
+                            <div>
+                                <a href="https://wa.me/201205520031?text=مرحبا%20أريد%20طلب%20-%20
